@@ -1,16 +1,31 @@
-# todp1
 
-A new Flutter project.
 
-## Getting Started
+1. **Overview**: A Flutter app to set daily reminders with local notifications.
 
-This project is a starting point for a Flutter application.
+2. **Dependencies**: Uses `flutter_local_notifications` for notifications and `timezone` for time zone handling.
 
-A few resources to get you started if this is your first Flutter project:
+3. **Setup**:
+   - Initialize time zones with `tz.initializeTimeZones()`.
+   - Configure notifications with an Android icon.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+4. **UI Features**:
+   - **Day Selector**: Dropdown to choose a day of the week.
+   - **Time Picker**: Select reminder time.
+   - **Activity Selector**: Dropdown for reminder activities.
+   - **Reminder List**: Shows and allows deletion of upcoming reminders.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+5. **Notification Scheduling**:
+   - **Calculate Date/Time**: Adjusts for the chosen day and time.
+   - **Schedule Notification**: Uses `zonedSchedule` for timing and sound.
+
+6. **Notification Handling**:
+   - **Popup Dialog**: Displays reminder details when a notification is tapped.
+
+7. **Reminder Management**:
+   - **Add Reminder**: Updates list and schedules notification.
+   - **Delete Reminder**: Remove reminders from the list.
+
+8. **Run Instructions**:
+   - Clone the repo, run `flutter pub get` to install dependencies, and start the app.
+
+
